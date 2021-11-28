@@ -29,6 +29,10 @@
 - Run below command to create a secret key
     `php artisan key:generate`
 
+- Migrate & Seed Database
+    `php artisan migrate`
+    `php artisan db:seed`
+
 ## Usage
 
 ### Front-end
@@ -38,3 +42,38 @@
 ### Back-end
 
 `php artisan serve`
+
+## Frontend pages
+
+- Login `/login`
+- Home `/`
+
+## API Endpoints
+
+### GET
+`/api/todos`
+
+### POST
+
+`/api/todos`
+
+Body:
+
+```json
+{
+    "description": "Order ssss"
+
+}
+```
+
+### PUT
+`/api/todos{id}`
+
+```json
+{
+    "description": "Order ssss"
+
+}
+```
+### DELETE
+`/api/todos{id}`
