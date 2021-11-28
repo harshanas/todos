@@ -13,6 +13,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $data = [
+            ['description'=>'Buy Milk', 'status'=> 2],
+            ['description'=>'Order Phone', 'status'=> 1],
+            ['description'=>'Call Mom', 'status'=> 0],
+            //...
+        ];
+        \App\Models\Todo::insert($data);
     }
 }
